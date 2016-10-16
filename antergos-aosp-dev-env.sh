@@ -22,3 +22,8 @@ if [ ! -d ~/Code/android/cm ]; then
 	mkdir -p ~/Code/android/cm
 	echo "Created CyanogenMod source code directory"
 fi
+
+# Download source code
+cd ~/Code/android/cm
+repo init -u https://github.com/CyanogenMod/android.git -b cm-14.0
+repo sync
