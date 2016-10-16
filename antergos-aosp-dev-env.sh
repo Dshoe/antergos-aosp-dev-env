@@ -26,5 +26,5 @@ fi
 
 # Download source code
 cd ~/Code/android/aosp/cm
-repo init -u https://github.com/CyanogenMod/android.git -b cm-14.0
+repo init -u https://github.com/cm-xperience/android.git -b cm-14.0
 repo sync
