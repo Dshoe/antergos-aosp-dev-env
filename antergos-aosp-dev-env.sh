@@ -19,12 +19,12 @@ yaourt -S repo
 # fi
 
 # Create source code directory
-if [ ! -d ~/Code/android/cm ]; then
-	mkdir -p ~/Code/android/cm
+if [ ! -d ~/Code/android/aosp/cm ]; then
+	mkdir -p ~/Code/android/aosp/cm
 	echo "Created CyanogenMod source code directory"
 fi
 
 # Download source code
-cd ~/Code/android/cm
+cd ~/Code/android/aosp/cm
 repo init -u https://github.com/CyanogenMod/android.git -b cm-14.0
 repo sync
