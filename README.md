@@ -1,1 +1,1 @@
-# antergos-aosp-dev-env.new
+antergos-aosp-dev-env
