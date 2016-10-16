@@ -28,3 +28,7 @@ fi
 cd ~/Code/android/aosp/cm
 repo init -u https://github.com/cm-xperience/android.git -b cm-14.0
 repo sync
+
+# Download angler specific device code
+source build/envsetup.sh
+breakfast angler
