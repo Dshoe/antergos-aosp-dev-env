@@ -1,5 +1,9 @@
 #!/bin/sh
 
+# Symlink python 2.7
+sudo rm /usr/bin/python
+sudo ln -s /usr/bin/python2.7 /usr/bin/python
+
 # Install repo
 yaourt -S repo
 # if [ ! -d ~/bin ]; then
