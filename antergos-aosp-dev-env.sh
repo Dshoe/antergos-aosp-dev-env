@@ -5,7 +5,8 @@ sudo rm /usr/bin/python
 sudo ln -s /usr/bin/python2.7 /usr/bin/python
 
 # Install build tools
-yaourt -S ccache repo
+gpg --keyserver pgp.mit.edu --recv-keys 702353E0F7E48EDB # Needed for ncurses5-compat-libs
+yaourt -S ccache ncurses5-compat-libs repo schedtool
 
 # Create source code directory
 if [ ! -d ~/Code/android/aosp/cm ]; then
