@@ -21,3 +21,8 @@ repo sync
 # Download angler specific device code
 source build/envsetup.sh
 breakfast angler
+
+# Prepare ccache
+export USE_CCACHE=1
+echo export USE_CCACHE=1 >> ~/.bashrc
+prebuilts/misc/linux-x86/ccache/ccache -M 50G
